@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style/contacto.css">    <link rel="icon" type="image/jpg" href="./imagenes/logo.jpg">
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        
+    <script src="https://kit.fontawesome.com/73d62dd04a.js" crossorigin="anonymous"></script>
+    <title>Calienticos y Deliciosos</title>
+</head>
+
+<body>
+        <nav>
+                <img src="./imagenes/logo.jpg" alt="">
+                <li><a href="./index.html">INICIO</a></li>
+                <li><a href="./nosotros.html">NOSOTROS</a></li>
+                <li><a href="./productos.html">COMPRAR AQUI</a></li>
+                <li><a href="./contacto.html" class="activa">ENCUESTA</a></li>
+                <li><a href="./muestraencuesta.html" >OPINION CLIENTES</a></li>
+        </nav>
+        <div class="contenedor">
+                <div class="caja1">
+                        <h1>encuesta</h1>
+                        <form action="/crear" id="encuestaForm" method="post">
+                                <p>Como fue su experiencia de compra </p>
+                                <div class="campo">
+                                        <div class="pregunta"><input type="radio" value="muy buena" name="Experiencia"
+                                                        id="muy buena"><label for=""> muy buena</label></div>
+                                        <div class="pregunta"><input type="radio" value="buena" name="Experiencia"
+                                                        id="buena"><label for="">buena</label></div>
+                                        <div class="pregunta"><input type="radio" value="regular" name="Experiencia"
+                                                        id="regular"><label for="">regular</label></div>
+                                        <div class="pregunta"><input type="radio" value="mala" name="Experiencia"
+                                                        id="mala"><label for="">mala</label></div>
+                                </div>
+                                <p>Cuan probable es que recomiende nuestro producto </p>
+                                <div class="campo2">
+                                        <div class="pregunta"><input type="radio" value="muy probable"
+                                                        name="Compartir_info" id="muy probable"><label for=""> muy
+                                                        probable</label></div>
+                                        <div class="pregunta"><input type="radio" value="probable" name="Compartir_info"
+                                                        id="probable"><label for="">Probable</label></div>
+                                        <div class="pregunta"><input type="radio" name="poco probable"
+                                                        value="Compartir_info" id="Compartir_info"><label for="">poco
+                                                        probable</label></div>
+                                </div>
+                                <p>Como califica la calidad de la atencion recibida</p>
+                                <div class="campo">
+                                        <div class="pregunta"><input type="radio" value="muy buena" name="Calificacion"
+                                                        id="muy buena"><label for=""> muy buena</label></div>
+                                        <div class="pregunta"><input type="radio" value="buena" name="Calificacion"
+                                                        id="buena"><label for="">buena</label></div>
+                                        <div class="pregunta"><input type="radio" value="regular" name="Calificacion"
+                                                        id="regular"><label for="">regular</label></div>
+                                        <div class="pregunta"> <input type="radio" value="mala" name="Calificacion"
+                                                        id="mala"><label for="">mala</label></div>
+                                </div>
+                                <p>Respecto a los colaboradores: Son educados,practican <br>la cortecia y tienen
+                                        paciencia al tomar su
+                                        pedido</p>
+                                <div class="campo">
+                                        <div class="pregunta"><input type="radio" value="si" name="Colaboradores"
+                                                        id="si"><label for="">
+                                                        si</label></div>
+                                        <div class="pregunta"><input type="radio" value="no" name="Colaboradores"
+                                                        id="no"><label for="">no</label></div>
+                                </div>
+                                <p>Alguna recomendacion hacia alguno de estos</p>
+                                <div class="campo3">
+                                        <textarea name="Recomendacion_cola"  cols="30" rows="10"></textarea>
+                                </div>
+                                <p>Que peticion,queja,reclamo,sugerencia y/o felicitaciones desea hacer</p>
+                                <div class="campo3">
+                                        <textarea name="Queja_reclamo" cols="30" rows="10"></textarea>
+                                </div>
+                                <button type="submit">Enviar</button>
+                        </form>
+                </div>
+        </div>
+        <script>
+                document.getElementById('encuestaForm').addEventListener('submit', function (event) {
+                        event.preventDefault();
+
+                        const Experiencia = document.querySelector('input[name="Experiencia"]:checked').value;
+                        const Compartir_info = document.querySelector('input[name="Compartir_info"]:checked').value;
+                        const Calificacion = document.querySelector('input[name="Calificacion"]:checked').value;
+                        const Colaboradores = document.querySelector('input[name="Colaboradores"]:checked').value;
+                        const Recomendacion_cola = document.querySelector('textarea[name="Recomendacion_cola"]').value;
+                        const Queja_reclamo = document.querySelector('textarea[name="Queja_reclamo"]').value;
+
+                        axios.post('http://localhost:3004/crear', {
+                                Experiencia,
+                                Compartir_info,
+                                Calificacion,
+                                Colaboradores,
+                                Recomendacion_cola,
+                                Queja_reclamo
+                        })
+                                .then(response => {
+                                        console.log('Respuesta del servidor:', response.data);
+                                        alert('Encuesta enviada exitosamente');
+                                })
+                                .catch(error => {
+                                        console.error('Error al enviar la encuesta:', error);
+                                        alert('Error al enviar la encuesta');
+                                });
+                });
+
+                document.getElementById('encuestaForm').addEventListener('submit', function (event) {
+                        event.preventDefault();
+                });
+
+        </script>
+</body>
+<footer>
+        <h1>Calienticos & Deliciosos</h1>
+        <div class="pie">
+            <div class="footer">
+                <div class="etiqueta">
+                  <p>Derecho reservado Calienticos y Deliciosos ♡ por </p> <h6>Calienticos</h6>  
+                </div>
+                
+                <p>CL 25 #65D-19 050021 Medellín, Colombia</p>
+            </div>
+            <div class="redes">
+                <a href="https://www.instagram.com/calienticosydeliciosos/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/calienticosydeliciosos/"><i class="fa-brands fa-square-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+</html>

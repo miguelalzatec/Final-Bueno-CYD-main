@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/productos.css">
+    <link rel="icon" type="image/jpg" href="./imagenes/logo.jpg">
+    <script src="https://kit.fontawesome.com/73d62dd04a.js" crossorigin="anonymous"></script>
+    <title>Calienticos y Deliciosos</title>
+</head>
+
+<body>
+    <nav>
+        <img src="./imagenes/logo.jpg" alt="">
+        <li><a href="./index.html">INICIO</a></li>
+        <li><a href="./nosotros.html">NOSOTROS</a></li>
+        <li><a href="./productos.html" class="activa">COMPRAR AQUI</a></li>
+        <li><a href="./contacto.html">ENCUESTA</a></li>
+        <li><a href="./muestraencuesta.html" >OPINION CLIENTES</a></li>
+    </nav>
+    <div class="busqueda">
+        <a href="#panaderia"><img src="https://img.icons8.com/ios/80/000000/bread.png" alt=""> Panaderia</a>
+        <a href="#reposteria"><img src="https://img.icons8.com/wired/80/000000/cake.png" alt=""> Reposteria</a>
+        <a href="#fritos"><img src="https://img.icons8.com/fluency-systems-regular/80/gyoza.png" alt="gyoza" alt=""> Fritos</a>
+        <a href="#bebidas"><img src="https://img.icons8.com/pastel-glyph/80/energy-sport-drink.png" alt=""> Bebidas</a>
+    </div>
+    <header>
+        <div class="container-icon">
+            <div class="container-cart-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="icon-cart">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                </svg>
+                <div class="count-products">
+                    <span id="contador-productos">0</span>
+                </div>
+            </div>
+
+            <div class="container-cart-products hidden-cart">
+                <div class="row-product hidden">
+                    <div class="cart-product">
+                        <div class="info-cart-product">
+                            <span class="cantidad-producto-carrito">1</span>
+                            <p class="titulo-producto-carrito">Zapatos Nike</p>
+                            <span class="precio-producto-carrito">$80</span>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="icon-close">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="cart-total hidden">
+                    <div class="cart-compra">
+                        <h3>Total:</h3>
+                        <span id="total-pagar" class="total-pagar">$</span>
+                    </div>
+                    <a href="./compra.html">Comprar</a>
+                </div>
+                <p class="cart-empty">El carrito está vacío</p>
+            </div>
+        </div>
+    </header>
+    <div class="container-items">
+        <div class="item_seleccion" id='panaderia'>
+            <li>
+                <a href="#">
+                    <img width="80" height="80" src="https://img.icons8.com/ios/150/000000/bread.png"
+                        alt="cuts-of-pork" />
+                    <p>Panaderia</p>
+                </a>
+            </li>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://amoradulce.com/wp-content/uploads/2021/02/Almojabanas-600x600.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Almojabana con lecherita </h2>
+                <p class="price">$3800</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://3.bp.blogspot.com/-HcdUdYro0wg/Tc6JIzAIdUI/AAAAAAAAAAg/JbKC6cei07w/s1600/Almojabanas-01.jpg"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Almojabana de piña</h2>
+                <p class="price">$3800</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://3.bp.blogspot.com/-HcdUdYro0wg/Tc6JIzAIdUI/AAAAAAAAAAg/JbKC6cei07w/s1600/Almojabanas-01.jpg"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Almojabana de arequipe</h2>
+                <p class="price">$1500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://milrecetas.net/wp-content/uploads/2017/09/receta-para-hacer-donas-caseras.jpg"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Donas </h2>
+                <p class="price">$3000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://th.bing.com/th/id/OIP.y7_psaW0Exxf9DQeR7OJeQHaE7?pid=ImgDet&rs=1" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Rollo rojo </h2>
+                <p class="price">$3000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://th.bing.com/th/id/OIP.7O2Y2eP_fQJwm-GhKDjw6QHaEk?pid=ImgDet&rs=1" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2> Palito de queso </h2>
+                <p class="price">$3600</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://comohacer.cl/wp-content/uploads/2020/05/brazo-de-reina-768x518.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Rollo chips</h2>
+                <p class="price">$3000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://1.bp.blogspot.com/-v5UKy8cXTwU/XQpOdjCr3tI/AAAAAAAAD20/sT8PP06MfKsn3J_5m4vgjqIF68btrEZ_QCLcBGAs/s1600/20190619_094352.jpg"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Empanada de cambray</h2>
+                <p class="price">$3200</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://files.rcnradio.com/public/2021-03/almojabana_1.jpg?itHEskbvdl4yVNqZtqbIVm9B1FdIWWNc"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Almojabana sencilla </h2>
+                <p class="price">$1500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://colombiapanysabor.com/wp-content/uploads/2021/01/tostadas-cps-300x277.jpg"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Tostadas </h2>
+                <p class="price">$2500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://badun.nestle.es/imgserver/v1/80/1290x742/234463f815e8-bunuelos-de-viento-rellenos-de-crema.jpg"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Buñuelo con lecherita </h2>
+                <p class="price">$3500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://th.bing.com/th/id/R.d1eb2af62f51ba2a8e44887947a144af?rik=A0wfYgFkRn1Lww&pid=ImgRaw&r=0"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Pastel de guayaba y queso</h2>
+                <p class="price">$4200</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://turismo-sostenible.com.co/wp-content/uploads/2022/11/panchocha-520x397.jpg"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Panchoca </h2>
+                <p class="price">$6800</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://th.bing.com/th/id/R.4f560837e213bfb653cdede3ceaf8ab5?rik=iDWoK6PPnOW1Zw&pid=ImgRaw&r=0"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Empanada de carne</h2>
+                <p class="price">$3500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://1.bp.blogspot.com/-IzO4SOECG0I/U_tTlOJOjII/AAAAAAAAAIs/EYjrJXJiZ-o/s1600/IMG_2858%2Bcopy.jpg"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Buñuelo sencillo </h2>
+                <p class="price">$1500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://blog.redbus.co/wp-content/uploads/2019/11/portada-6-e1573588537948.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Buñuelo con mozzarella </h2>
+                <p class="price">$2500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://th.bing.com/th/id/OIP.be9MLCKQby1-zPYzaxWl4QHaE8?pid=ImgDet&rs=1" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Pastel de pollo</h2>
+                <p class="price">$4400</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://th.bing.com/th/id/OIP.mzQba1gSRcEtaqaWT7A_TAHaE7?pid=ImgDet&rs=1" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Pastel de queso </h2>
+                <p class="price">$4200</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://img.freepik.com/foto-gratis/crema-agria-tazon-rebanadas-pan_23-2148438660.jpg?size=626&ext=jpg"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Porcion pan crema </h2>
+                <p class="price">$2800</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://thumbs.dreamstime.com/z/pan-integral-en-lonchas-blanco-rodajas-aislado-fondo-182402913.jpg"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Pan loncha</h2>
+                <p class="price">$3500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://coolinarika.azureedge.net/images/_variations/6/b/6baf1e91badbdecbe467e6b699a80219_view_m.jpg?v=5"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Panceroti</h2>
+                <p class="price">$4300</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://th.bing.com/th/id/OIP.mvw7gwfvFrem_QGaqwWpNgHaHb?pid=ImgDet&rs=1" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Rollo arequipe </h2>
+                <p class="price">$5300</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://th.bing.com/th/id/R.5bf57346a7ef940a3090125df164f39c?rik=4xXg%2fiRI6yWWdQ&pid=ImgRaw&r=0"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Pastel de arequipe y queso</h2>
+                <p class="price">$4200</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://quesosdistribell.com/wp-content/uploads/2020/08/almojabanas-768x512.jpg"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Caja pequeña de almojabana</h2>
+                <p class="price">$22000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://th.bing.com/th/id/R.b739100d3e27707129d301174dfadfc7?rik=zPvvroPVvCM5bA&pid=ImgRaw&r=0"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Pan tradicional</h2>
+                <p class="price">$800</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://th.bing.com/th/id/R.d64e395c866f7a0522ddd89b0d65889b?rik=4cnO69Ryp%2b%2f7Yw&riu=http%3a%2f%2fcongeladossalomia.com%2fwp-content%2fuploads%2f2020%2f09%2fprod-pastel-ranchero.jpg&ehk=2mvMP7QTSWaInneNhTEHcVIYSDk7J5MX6KNaVP2OxZY%3d&risl=&pid=ImgRaw&r=0"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Pastel ranchero</h2>
+                <p class="price">$4300</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://quepasada.cc/wp-content/uploads/b/bunuelos-de-queso-caseros/8.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Buñuelo extraqueso</h2>
+                <p class="price">$5300</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://i.ytimg.com/vi/jw_hZW5yyow/maxresdefault.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Agridulce grande </h2>
+                <p class="price">$1700</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://d1kxxrc2vqy8oa.cloudfront.net/wp-content/uploads/2019/01/22155644/RFB-11-2-almojabanas.jpg"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Almojabana con queso mozarrela</h2>
+                <p class="price">$2800</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://www.brunelli.co/uploads/9/8/5/2/9852106/captura-de-pantalla-2019-11-05-a-la-s-10-23-07-p-m_orig.png"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Caja pequeña de buñuelos</h2>
+                <p class="price">$19500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://1.bp.blogspot.com/-Nx55aY8oSj4/XrIC1ZxXxmI/AAAAAAAATuk/roJDBmCW63IqXcyAc8T9rs57xWpQFpCGgCLcBGAsYHQ/s1600/aa.jpg"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Buñuelo con chocolate</h2>
+                <p class="price">$4500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://th.bing.com/th/id/OIP.4CB8gqjGOGxCSZ_nKvNwzAHaDq?pid=ImgDet&rs=1" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Buñuelo con queso mozarrella y nuttela</h2>
+                <p class="price">$4300</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://th.bing.com/th/id/OIP.2G0QeX_n8a-iSqdAC-KMNAHaE6?pid=ImgDet&rs=1" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Almojabana extraqueso</h2>
+                <p class="price">$5500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://3.bp.blogspot.com/-aamrKnrzozE/Vvxx2b3zxkI/AAAAAAAACA8/2pvh7jYVXP8POXXifk8tcCMofchYUTrjw/s1600/PANDEQUESO-23%2Bcopia.jpg"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Pandequeso</h2>
+                <p class="price">$1500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://th.bing.com/th/id/R.72d6b37c4405b579322047a1d46c9a86?rik=ZW%2fDhu47bgwpug&pid=ImgRaw&r=0"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Pan crema familiar </h2>
+                <p class="price">$8000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://peterpan24horas.com/wp-content/uploads/2018/08/IMG_5181.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>croissant de chocolate</h2>
+                <p class="price">$3500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://th.bing.com/th/id/R.10cc876063bab1ed60b64fded298304f?rik=3W%2fOzqk5scsgFw&pid=ImgRaw&r=0&sres=1&sresct=1"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Almojabana de mora </h2>
+                <p class="price">$3800</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://th.bing.com/th/id/R.1ec1c062a89f3046c33b27eb2b61df85?rik=sfxF6tjGjI5bXw&pid=ImgRaw&r=0"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Pan salchicha</h2>
+                <p class="price">$2200</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://img.cocinarico.es/2020-01/pan-pizza-casero-1.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Pan pizza</h2>
+                <p class="price">$3800</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://th.bing.com/th/id/OIP.tP94ANuDUsDV2gGAa3V0PQAAAA?pid=ImgDet&rs=1" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Buñuello con queso mozarrella</h2>
+                <p class="price">$2500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://blog.redbus.co/wp-content/uploads/2020/04/almojabana-768x403.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Almojabana con mozarrella y nuttela</h2>
+                <p class="price">$2200</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://th.bing.com/th/id/OIP.pcLsVOozFggoiBLz25SOJgHaE8?pid=ImgDet&rs=1" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Pastel de guayaba</h2>
+                <p class="price">$2500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://th.bing.com/th/id/R.b8b3c4c7d783ad166088d6af050439f9?rik=xGjXeoF5KQ%2bLaA&pid=ImgRaw&r=0"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Pan de almojabana </h2>
+                <p class="price">$7300</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://th.bing.com/th/id/R.c853434f41432173399a70901b8df613?rik=yF3GRl7jj8HMzA&pid=ImgRaw&r=0"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Pan trenza</h2>
+                <p class="price">$7300</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://th.bing.com/th/id/R.d95ab5def0bc080a55b8c8a402acf946?rik=9YzZCa7V2d5TEA&pid=ImgRaw&r=0"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Pan de la abuela</h2>
+                <p class="price">$6300</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://th.bing.com/th/id/OIP.SfWfL8Jy98n91mmpMzIDPgHaEY?pid=ImgDet&rs=1" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Promocion de pandequeso</h2>
+                <p class="price">$8000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://th.bing.com/th/id/R.34e89c814c4991c2999877f4b1d57394?rik=45a3MDfS3r7YFA&pid=ImgRaw&r=0"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>croissant de queso </h2>
+                <p class="price">$2500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://amapolapr.com/images/recetas/polaroid-veg-almojabanas.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Almojabana de guayaba</h2>
+                <p class="price">$3800</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://th.bing.com/th/id/OIP.vs28DFaHwDxdhrxeWKYUFgHaE7?pid=ImgDet&rs=1" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Almojabana de chocolate</h2>
+                <p class="price">$3800</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://th.bing.com/th/id/R.60c02c8aaca0bef176c49b5a185a6f09?rik=raYC57ZWi1oT6Q&riu=http%3a%2f%2fcdn1.recetasdecocina-casera.com%2frecetas%2freceta-de-pan-tipo-baguette.JPG&ehk=U5TQttmyFQcM97iQjruc0SSP0dQmoVcp%2bLWgKlRrdyU%3d&risl=&pid=ImgRaw&r=0"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Pan aliñado grande </h2>
+                <p class="price">$1700</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://th.bing.com/th/id/OIP.D81fuaY1nbvh0z_MXCv3NgHaE8?pid=ImgDet&rs=1" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Pastel gloria</h2>
+                <p class="price">$4500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://th.bing.com/th/id/R.09b2249a16bba9f52f338322339cf2e5?rik=p6vG%2bqnoakGDdg&pid=ImgRaw&r=0"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Jamonada</h2>
+                <p class="price">$3000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://www.bezzia.com/wp-content/uploads/2019/05/moras-dulces.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Buñuelo de mora</h2>
+                <p class="price">$3500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://www.bezzia.com/wp-content/uploads/2019/05/moras-dulces.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Promocion pan leche</h2>
+                <p class="price">$3000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="item_seleccion" id='reposteria'>
+            <li>
+                <a href="#">
+                    <img width="80" height="80" src="https://img.icons8.com/wired/200/000000/cake.png"
+                        alt="cuts-of-pork" />
+                    <p>Reposteria</p>
+                </a>
+            </li>
+        </div>
+
+        <div class="item">
+            <figure>
+                <img src="https://canalcocina.es/medias/_cache/zoom-a794a0ff8d328c40e6c04c79c47620fa-920-518.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Nido de frutas</h2>
+                <p class="price">$8600</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        
+        <div class="item">
+            <figure>
+                <img src="https://www.chilenacocina.com/wp-content/uploads/2021/07/flan-de-leche.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Flan de leche azada </h2>
+                <p class="price">$7500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <figure>
+                <img src="https://www.mycolombianrecipes.com/wp-content/uploads/2010/03/Torta-Maria-Luisa-Colombiana.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Torta maria luisa</h2>
+                <p class="price">$4000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://th.bing.com/th/id/R.a054d3ca0f36cc892baa3b977b14e5ad?rik=NKWpJ1ZHz08wOw&pid=ImgRaw&r=0" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Postre de oreo</h2>
+                <p class="price">$7000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_636188-MLM46156568899_052021-F.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Vaso de gelatina </h2>
+                <p class="price">$5000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://d1uz88p17r663j.cloudfront.net/original/dc67d02ed24f476c02b31414e8aeb9a8_recetas_nestle_venezuela_torta_de_chocolate_con_glaseado_savoy-min.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Torta de chocolate </h2>
+                <p class="price">$4000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://amoradulce.com/wp-content/uploads/2020/01/229833_106084742886694_112380433_n.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Postre de maracuya </h2>
+                <p class="price">$7000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://www.lavanguardia.com/uploads/2021/01/27/60115c502e273.jpeg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Berlina</h2>
+                <p class="price">$3200</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://donjacobopasteleria.com/wp-content/uploads/2020/08/sliderdjslider5.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Genovesa</h2>
+                <p class="price">$7500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://i.pinimg.com/originals/44/31/35/44313520ad94b16821636bb5b8aa668a.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Caja mixta </h2>
+                <p class="price">$38000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://oashop.com/wp-content/uploads/2019/09/Torta-Negra-Envinada-720-Gr.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Torta envinada </h2>
+                <p class="price">$4000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        
+        <div class="item">
+            <figure>
+                <img src="https://www.lamigueria.com.co/wp-content/uploads/2022/07/ENCARCELADO-768x634.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Encarcelado</h2>
+                <p class="price">$3800</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+
+
+      
+
+        <div class="item_seleccion" id='bebidas'>
+            <li>
+                <a href="#">
+                    <img width="80" height="80" src="https://img.icons8.com/pastel-glyph/150/energy-sport-drink.png"
+                        alt="cuts-of-pork" />
+                    <p>Bebidas </p>
+                </a>
+            </li>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://productoslatinos.es/wp-content/uploads/2021/05/MAL00004.png" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Malta litro</h2>
+                <p class="price">$4500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://radiofonica.com/wp-content/uploads/2020/07/DD-347.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Cafe con leche</h2>
+                <p class="price">$2500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://pim-img-psmt1.aeropost.com/n/1/0/a/e/10aeb7a582db137773beaaa60c63bb24994d4ae7_Beverage_293825_01.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Hit en caja pequeño</h2>
+                <p class="price">$2000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://www.lechonadomicilio.com.co/wp-content/uploads/2020/07/JUGOS.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Jugos en agua</h2>
+                <p class="price">$3000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://jumbocolombiafood.vteximg.com.br/arquivos/ids/171490-1000-1000/7702090022728-20-281-29.jpg?v=636111275126070000" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Mega postobon</h2>
+                <p class="price">$9000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://cdn.shopify.com/s/files/1/0492/2458/1274/products/supermercados_la_vaquita_supervaquita_gaseosa_coca_cola_3l_nr_bebidas_liquidas_3df7d9f6-ab5c-4638-8cf3-2bb50b76491e_700x700.jpg?v=1620489381" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Coca cola mega</h2>
+                <p class="price">$9500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://supermercadocomunal.com/43215-large_default/jugo-hit-frutos-tropicales-500-ml.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Hit 500ml</h2>
+                <p class="price">$3800</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://www.licorerazonafrank.com/wp-content/uploads/2020/05/pony-malta-1l-300x300.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Malta 2L</h2>
+                <p class="price">$6500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://th.bing.com/th/id/R.657aec51648a14be9bbe803d6d176de4?rik=a3VC6%2fOnG5Tu%2fg&pid=ImgRaw&r=0" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Hit litro</h2>
+                <p class="price">$5500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://yaperito.com/shop/wp-content/uploads/2020/09/pony330ml-744x1024.png" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Malta 330ml</h2>
+                <p class="price">$3500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://comercializadorajm.com/wp-content/uploads/2021/01/87.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Gatorade</h2>
+                <p class="price">$5000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://liquordeliveries.co.zw/99-large_default/coca-cola-pet-350mlx24.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Coca cola mini</h2>
+                <p class="price">$3000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://es.algomtl.com/upload/coca-cola-pet-15l-Y4FRYpF5.png" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Coca cola 1.5l</h2>
+                <p class="price">$7000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://licores24.com/wp-content/uploads/2020/04/Postobon-1.5.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>postobon 1.5l</h2>
+                <p class="price">$6500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://supermercadocomunal.com/39652-large_default/gaseosa-coca-cola-400-ml.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Coca cola 400ml</h2>
+                <p class="price">$5000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+
+
+        <div class="item_seleccion" id='fritos'>
+            <li>
+                <a href="#">
+                    <img width="80" height="80" src="https://img.icons8.com/fluency-systems-regular/150/gyoza.png"
+                        alt="gyoza" alt="cuts-of-pork" />
+                    <p>Otros</p>
+                </a>
+            </li>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://sanchopaisa.com/wp-content/uploads/2020/09/CALENTAO-CON-REScopia.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Calentado con carne</h2>
+                <p class="price">$14000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://i.pinimg.com/originals/c4/77/74/c477740f9386ef42f5ac7a72725b01ae.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Huevos rancheros </h2>
+                <p class="price">$9000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://i.pinimg.com/736x/76/a6/3b/76a63b7a2e4fff8c10296d38edf6caa8--probar-thanksgiving-food.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Huevo en cazerola</h2>
+                <p class="price">$7000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://www.mycolombianrecipes.com/wp-content/uploads/2009/06/Receta-Papas-Rellenas.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Papa grande</h2>
+                <p class="price">$3800</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://i.pinimg.com/originals/02/55/b3/0255b381036c85e5e4c568fe94cb32d2.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Torta de carne</h2>
+                <p class="price">$9500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://arepart.com/wp-content/uploads/2020/10/arepa-mixta-w.png" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Arepa trifasica </h2>
+                <p class="price">$5400</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://pescado.site/wp-content/uploads/2021/06/tortas-de-pescado.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Torta de pescado </h2>
+                <p class="price">$9500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://i.pinimg.com/originals/bd/1c/61/bd1c615643f74d3001f65964cea62a84.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Arepa con salchichon</h2>
+                <p class="price">$3800</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://i.pinimg.com/originals/39/df/a4/39dfa4df72e0bf187fd8e3bc701f831f.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>desayuno casero con carne </h2>
+                <p class="price">$11500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://i.pinimg.com/originals/39/df/a4/39dfa4df72e0bf187fd8e3bc701f831f.jpg" alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>desayuno casero  </h2>
+                <p class="price">$7000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <script src="productos.js"></script>
+</body>
+<footer>
+    <h1>Calienticos & Deliciosos</h1>
+    <div class="pie">
+        <div class="footer">
+            <div class="etiqueta">
+                <p>Derecho reservado Calienticos y Deliciosos ♡ por </p>
+                <h6>Calienticos</h6>
+            </div>
+
+            <p>CL 25 #65D-19 050021 Medellín, Colombia</p>
+        </div>
+        <div class="redes">
+            <a href="https://www.instagram.com/calienticosydeliciosos/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/calienticosydeliciosos/"><i class="fa-brands fa-square-facebook"></i></a>
+        </div>
+    </div>
+</footer>
+
+</html>

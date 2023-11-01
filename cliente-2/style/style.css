@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav {
+    height: 120px;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 119, 7, 0.445), rgba(255, 119, 7, 0.445)),url(https://img.freepik.com/vector-premium/fondo-panaderia_6997-110.jpg?w=740) ;
+    backdrop-filter: blur(25px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+    
+}
+
+nav img {
+    width: 80px;
+    height: 80px;
+    margin-left: 25px;
+    border-radius: 50%;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+}
+nav a:hover{
+    border-bottom: 3px solid #fff;
+    padding: 10px;
+}
+.activa{
+    border-bottom: 3px solid #fff;
+    padding: 10px;
+}
+.textos {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    text-align: justify;
+    gap: 20px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.textos h2 {
+    font-size: 25px;
+    color: #ff6426;
+    text-align: justify;
+}
+
+.textos h1 {
+    font-size: 35px;
+    text-align: justify;
+}
+
+.caja1 {
+    width: 100%;
+    height: 520px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.carousel-caption p{
+    text-align: justify;
+}
+.caja2 {
+    margin-top: 100px;
+    width: 20%;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.conten{
+    background-color: rgba(175, 175, 175, 0.76);
+    width: 20%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.conten h5 {
+    margin-left: 37px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.conten h1 {
+    margin-left: 35px;
+    font-size: 40px;
+}
+
+.caja2_1 {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 45px;
+    margin-top: 65px;
+    margin-right: 20px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.644); /* Ajusta el último valor para controlar la opacidad y oscuridad */
+}
+
+.carousel{
+    margin-top: 10px;
+    width: 1200px;
+    height: 550px;
+}
+.carousel-item{
+    width: 1200px;
+    height: 550px;
+}
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+}
+footer {
+    margin-top: 100px;
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(rgba(32, 30, 30, 0.733), rgba(32, 30, 30, 0.733)), url('https://www.tcsworldtravel.com/sites/default/files/styles/tcs_featured_slideshow_xl/public/2021-05/shutterstock_771183904.jpg?h=10d202d3&itok=BQJHKgX_');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h1 {
+    font-size: 45px;
+    color: #fff;
+    margin-top: -10px;
+}
+
+.pie {
+    margin-top: 20px;
+    border-top: 1px solid #fff;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+}
+
+.footer {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #fff;
+    margin-left: 90px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.redes {
+    margin-top: 10px;
+    display: flex;
+    gap: 25px;
+}
+
+.redes i {
+    font-size: 25px;
+    color: #fff;
+
+}
+.etiqueta{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+.etiqueta h6{
+    font-size: 20px;
+    margin-top: 8px;
+    color: #ff5917;
+}

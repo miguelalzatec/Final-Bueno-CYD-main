@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav {
+    height: 120px;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 119, 7, 0.445), rgba(255, 119, 7, 0.445)),url(https://img.freepik.com/vector-premium/fondo-panaderia_6997-110.jpg?w=740) ;
+    backdrop-filter: blur(25px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+    
+}
+
+nav img {
+    width: 80px;
+    height: 80px;
+    margin-left: 25px;
+    border-radius: 50%;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+}
+nav a:hover{
+    border-bottom: 3px solid #fff;
+    padding: 10px;
+}
+.caja1{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://th.bing.com/th/id/R.8aa5d7fcf5a72c4a25ebaf5d8bf77907?rik=oRHxqhahWMuzYg&pid=ImgRaw&r=0);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+form{
+    width: 500px;
+    height: 550px;    
+    background-color: rgba(192, 192, 192, 0.616);
+    backdrop-filter: blur(25px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+    border-radius: 25px;
+}
+.contenidos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-top: 20px;
+    gap: 10px;
+}
+.contenidos input{
+    width: 400px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+.contenidos input::placeholder{
+    color: rgb(0, 0, 0);
+}
+.contenidos textarea::placeholder{
+    color: rgb(0, 0, 0);
+}
+.contenidos textarea{
+    width: 400px;
+    height: 100px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: transparent;
+}
+label{
+    color: rgb(0, 0, 0);
+}
+.contenidos_2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+}
+form  h2 {
+    color: rgb(0, 0, 0);
+}
+form  h3 {
+    color: rgb(0, 0, 0);
+}
+form span{
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}

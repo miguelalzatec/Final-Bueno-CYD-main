@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calienticos y Deliciosos</title>
+    <link rel="stylesheet" href="./style/muestraencuesta.css">
+    <link rel="icon" type="image/jpg" href="./imagenes/logo.jpg">
+
+</head>
+
+<body>
+    <nav>
+        <img src="./imagenes/logo.jpg" alt="">
+        <li><a href="./index.html">INICIO</a></li>
+        <li><a href="./nosotros.html">NOSOTROS</a></li>
+        <li><a href="./productos.html">COMPRAR AQUI</a></li>
+        <li><a href="./contacto.html">ENCUESTA</a></li>
+        <li><a href="./muestraencuesta.html" class="activa">OPINION CLIENTES</a></li>
+    </nav>
+</body>
+<div class="contenedor">
+    <h2>Opiniones de nuestros clientes</h2>
+    <div class="contenedor2">
+        <div id="resultados" class="cuadro"></div> 
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>axios.get('http://localhost:3004/')
+    .then(response => {
+        const datos = response.data;
+        const resultadosDiv = document.getElementById('resultados');
+
+        datos.forEach(dato => {
+            const nuevaTarjeta = document.createElement('div');
+            nuevaTarjeta.classList.add('tarjeta');
+
+            const experienciaP = document.createElement('p');
+            experienciaP.innerText = `Como fue su experiencia de compra: ${dato.Experiencia}`;
+            nuevaTarjeta.appendChild(experienciaP);
+
+            const compartirInfoP = document.createElement('p');
+            compartirInfoP.innerText = `Cuan probable es que recomiende nuestro producto: ${dato.Compartir_info}`;
+            nuevaTarjeta.appendChild(compartirInfoP);
+
+            const calificacionP = document.createElement('p');
+            calificacionP.innerText = `Como califica la calidad de la atencion recibida: ${dato.Calificacion}`;
+            nuevaTarjeta.appendChild(calificacionP);
+
+            const colaboradoresP = document.createElement('p');
+            colaboradoresP.innerText = `Respecto a los colaboradores: Son educados,practican la cortecia y tienen paciencia al tomar su pedido: ${dato.Colaboradores}`;
+            nuevaTarjeta.appendChild(colaboradoresP);
+
+            const recomendacionColaP = document.createElement('p');
+            recomendacionColaP.innerText = `Alguna recomendacion hacia alguno de estos: ${dato.Recomendacion_cola}`;
+            nuevaTarjeta.appendChild(recomendacionColaP);
+
+            const quejaReclamoP = document.createElement('p');
+            quejaReclamoP.innerText = `Que peticion,queja,reclamo,sugerencia y/o felicitaciones desea hacer: ${dato.Queja_reclamo}`;
+            nuevaTarjeta.appendChild(quejaReclamoP);
+
+            resultadosDiv.appendChild(nuevaTarjeta);
+        });
+    })
+    .catch(error => {
+        console.error('Error al obtener los datos:', error);
+    });
+</script>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/compra.css">
+    <link rel="icon" type="image/jpg" href="./imagenes/logo.jpg">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Calienticos y Deliciosos</title>
+</head>
+
+<body>
+    <nav>
+        <img src="./imagenes/logo.jpg" alt="">
+        <li><a href="./productos.html">VOLVER</a></li>
+    </nav>
+    <div class="caja1">
+        <form action="/create" id="compraForm" method="post">
+            <h2>Finalizar compra</h2>
+            <div class="contenidos">
+                <label for="">Nombre</label>
+                <input type="text" name="nombre" placeholder="Nombres">
+            </div>
+            <div class="contenidos">
+                <label for="">Direccion</label>
+                <input type="text" name="direccion" placeholder="Direccion">
+            </div>
+            <div class="contenidos">
+                <label for="">Especificacion</label>
+                <textarea name="especificacion" cols="30" rows="10" placeholder="Especificacion"></textarea>
+            </div>
+            <div class="contenidos_2">
+                <h3>Total:</h3>
+                <span id="pago-efectuar" name="total" class="pagar">$</span>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script>
+        const totalPagar = localStorage.getItem('totalPagar');
+
+        if (totalPagar) {
+            const pagarElement = document.getElementById('pago-efectuar');
+            pagarElement.innerText = `$${totalPagar}`;
+        }
+
+
+        document.getElementById('compraForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const nombre = document.querySelector('input[name="nombre"]').value;
+            const direccion = document.querySelector('input[name="direccion"]').value;
+            const especificacion = document.querySelector('textarea[name="especificacion"]').value;
+            const total = document.querySelector('span.pagar').textContent;
+
+
+            axios.post('http://localhost:3004/create', {
+                nombre,
+                direccion,
+                especificacion,
+                total
+            })
+                .then(response => {
+                    console.log('Respuesta del servidor:', response.data);
+                    alert('Pedido tomado exitosamente');
+                })
+                .catch(error => {
+                    console.error('Error al enviar la encuesta:', error);
+                    alert('Error al tomar el pedido');
+                });
+        });
+    </script>
+</body>
+
+</html>
